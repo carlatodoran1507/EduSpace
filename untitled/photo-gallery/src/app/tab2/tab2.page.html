@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Buna dimineata, s-a trezit dulceata!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="red-rectangle">
+    <p class="rectangle-text" *ngIf="showParagraph && clickCounter > 3">
+      hei {{paragraphText}}ceao
+    </p>
+    <ion-button color="secondary" (click)="clickedButton()">
+      {{buttonText}}
+    </ion-button>
+    <button>
+      hello
+    </button>
+  </div>
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content>
+
